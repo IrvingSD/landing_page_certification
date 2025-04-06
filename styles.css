@@ -7,7 +7,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5;
+    background-color: #F1F0F0;
 }
 
 #header{
@@ -16,7 +16,7 @@ body{
     left: 0;
     width: 100vw;
     height: 90px;
-    background-color: black;
+    background-color: #1F1F1F;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,16 +57,14 @@ a:hover{
 }
 
 main{
-    padding-top: 95px;
-    margin: 0 auto;
+    margin: 110px auto 0 auto;
     width: 50%;
-    height: 100vh;
-    border: 1px solid black;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
+    background-color: #FFFFFF;
+    border-radius: 10px;
 }
 
 h1{
@@ -98,15 +96,39 @@ label, input{
 #email, #submit{
     padding: 8px;
     font-size: 1rem;
-    border-radius: 10px;
 }
 
 #email{
     border-color: rgba(35, 35, 35, 0.21);
+    border-radius: 6px;
 }
 
 #submit{
-    width: 50%;
+    width: 40%;
+    cursor: pointer;
+    background-color: #F1F0F0;
+    border-radius: 15px;
+    border: none;
+
+    font-size: 1.1rem;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
 }
 
+#submit:hover {
+    letter-spacing: 3px;
+    background-color: #1A5CC6;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #1A5CC6 0px 7px 29px 0px;
+}
 
+#submit:active {
+    letter-spacing: 3px;
+    background-color: #1A5CC6;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #1A5CC6 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
