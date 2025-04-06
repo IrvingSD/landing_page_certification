@@ -7,7 +7,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #eeeeee;
+    background-color: #e5e5e5;
 }
 
 #header{
@@ -57,5 +57,56 @@ a:hover{
 }
 
 main{
+    padding-top: 95px;
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+
 }
+
+h1{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 30px auto;
+}
+
+form{
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+label, input{
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#email, #submit{
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+#email{
+    border-color: rgba(35, 35, 35, 0.21);
+}
+
+#submit{
+    width: 50%;
+}
+
+
